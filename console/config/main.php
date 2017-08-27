@@ -24,6 +24,7 @@ return [
                 '@vendor/wokster/yii2-db-settings/migrations',
                 '@vendor/wokster/yii2-menu/migrations',
                 '@vendor/wokster/yii2-seo-module/migrations',
+                '@vendor/wokster/yii2-tags-module/migrations',
             ]
         ],
     ],
