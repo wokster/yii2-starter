@@ -20,7 +20,6 @@ return [
         ],
         'settings'=>[
           'class'=>'wokster\settings\Settings',
-          'imageUrl' => 'http://clear.local/upload/settings/images/'
         ],
         'seo'=>[
           'class'=>'wokster\seomodule\Seo',
@@ -37,6 +36,9 @@ return [
         'menu'=>[
             'class'=>'wokster\menu\Menu',
         ],
+        'tags'=>[
+            'class'=>'wokster\tags\Tags',
+        ],
     ],
     'components' => [
         'request' => [
@@ -52,7 +54,7 @@ return [
             'name' => 'advanced-backend',
         ],
         'log' => [
-            'traceLevel' => YII_DEBUG ? 3 : 0,
+            'traceLevel' => 3,
             'targets' => [
                 [
                     'class' => 'yii\log\FileTarget',
