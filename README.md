@@ -22,21 +22,9 @@ init project
 php init
 ```
 create db and add params in ...myproject.com\common\config\main-local.php
-run default yii2 migrations to create user table:
+run yii2 migrations to create user table and other:
 ```
 php yii migrate
-```
-run migrations to create tables for setting module:
-```
-php yii migrate --migrationPath=@vendor/wokster/yii2-db-settings/migrations
-```
-run migrations to create tables for pages module:
-```
-php yii migrate --migrationPath=@vendor/wokster/yii2-pages/migrations
-```
-run migrations to create tables for seo module:
-```
-php yii migrate --migrationPath=@vendor/wokster/yii2-seo-module/migrations
 ```
 
 it's all
