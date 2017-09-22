@@ -1,16 +1,22 @@
 <?php
 $params = array_merge(
     require(__DIR__ . '/../../common/config/params.php'),
-    require(__DIR__ . '/../../common/config/params-local.php'),
-    require(__DIR__ . '/params.php'),
-    require(__DIR__ . '/params-local.php')
+    require(__DIR__ . '/params.php')
 );
 
 return [
     'id' => 'app-frontend',
     'basePath' => dirname(__DIR__),
-    'bootstrap' => ['log'],
+    'bootstrap' => ['log','gii','debug'],
     'controllerNamespace' => 'frontend\controllers',
+    'modules'=>[
+        'gii' => [
+            'class' => 'yii\gii\Module',
+        ],
+        'debug' => [
+            'class' => 'yii\debug\Module'
+        ],
+    ],
     'components' => [
         'request' => [
             'csrfParam' => '_csrf-frontend',
