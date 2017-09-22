@@ -41,16 +41,13 @@ return [
             'class' => 'yii\image\ImageDriver',
             'driver' => 'Imagick',  //GD or Imagick
         ],
-        'db' => [
-            'class' => 'yii\db\Connection',
-            'dsn' => 'mysql:host=localhost;dbname=wokster_starter',
-            'username' => 'root',
-            'password' => '',
-            'charset' => 'utf8',
-        ],
-        'mailer' => [
-            'class' => 'yii\swiftmailer\Mailer',
-            'viewPath' => '@common/mail',
+        'i18n' => [
+            'translations' => [
+                'file-input' => [
+                    'class' => 'yii\i18n\PhpMessageSource',
+                    'basePath' => 'dosamigos\fileinput\src\messages',
+                ],
+            ],
         ],
     ],
 ];

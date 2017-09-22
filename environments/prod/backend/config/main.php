@@ -71,5 +71,17 @@ return [
             'rules' => require(__DIR__ . '/../../frontend/config/routes.php'),
         ],
     ],
+    'on beforeAction' => function($event){
+      Yii::$app->controller->attachBehavior('',[
+          'class' => \yii\filters\AccessControl::className(),
+          'except' => ['login','error'],
+          'rules' => [
+              [
+                  'allow' => true,
+                  'roles' => ['@'],
+              ],
+          ],
+      ]);
+    },
     'params' => $params,
 ];
