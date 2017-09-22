@@ -22,7 +22,6 @@
         "wokster/yii2-db-settings": "*",
         "wokster/yii2-seo-module": "*",
         "wokster/yii2-article": "*",
-        "wokster/yii2-menu": "*",
         "wokster/yii2-tags-module": "*",
         "dmstr/yii2-adminlte-asset": "2.*",
         "kartik-v/yii2-datecontrol": "*",
